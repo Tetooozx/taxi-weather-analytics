@@ -2,6 +2,7 @@
 
 A production-ready ETL pipeline that processes 1.4M+ NYC taxi trip records, enriches them with weather data, trains an ML model, and visualizes insights in Power BI.
 
+
 ---
 
 ## Table of Contents
@@ -12,7 +13,6 @@ A production-ready ETL pipeline that processes 1.4M+ NYC taxi trip records, enri
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Quick Start](#quick-start)
-- [Pipeline Tasks](#pipeline-tasks)
 - [Power BI Dashboard](#power-bi-dashboard)
 - [Data Schema](#data-schema)
 - [Outputs](#outputs)
@@ -63,11 +63,11 @@ This project demonstrates a complete data engineering workflow including:
 +--------+   +--------+   +--------+   +--------+   +--------+
                                                          |
                           +------------------------------+
-                          |                              |
-                   +------v------+                +------v------+
-                   |  Generate   |                |   Notify    |
-                   |   Report    |                |   Slack     |
-                   +-------------+                +-------------+
+                          |                       
+                   +------v------+                
+                   |  Generate   |                
+                   |   Report    |                
+                   +-------------+  
 ```
 
 ---
@@ -146,10 +146,6 @@ Orchestrated_ETLPipeline/
 
 ## Quick Start
 
-### Prerequisites
-- Docker and Docker Compose
-- Power BI Desktop (Windows)
-- 8GB+ RAM recommended
 
 ### Step 1: Clone and Setup
 
@@ -207,23 +203,6 @@ docker exec airflow-scheduler airflow connections add 'fs_default' \
 | Table | taxi_trips |
 
 ---
-
-## Pipeline Tasks
-
-| Task | Description | Approx Duration |
-|------|-------------|-----------------|
-| check_data_arrival | FileSensor waits for train.csv | 1 second |
-| process_data | Clean data and feature engineering | 2-3 minutes |
-| enrich_weather | Fetch weather from Open-Meteo API | 1-2 minutes |
-| train_model | Train Random Forest model | 3-5 minutes |
-| load_to_postgres | Load 1.4M records to database | 2-3 minutes |
-| generate_report | Create PDF with charts | 30 seconds |
-| notify_slack | Send completion notification | 1 second |
-
-Total pipeline duration is approximately 10-15 minutes.
-
----
-
 ## Power BI Dashboard
 
 ### Page 1: Executive Overview
