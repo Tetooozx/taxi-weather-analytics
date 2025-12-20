@@ -1,0 +1,23 @@
+NYC Taxi Trip Duration Prediction Model
+==================================================
+
+Training Date: 2025-12-20 18:10:03.472386
+Training Samples: 400,000
+Test Samples: 100,000
+
+METRICS:
+  Mean Absolute Error: 3.50 minutes
+  Root Mean Squared Error: 14.28 minutes
+  R² Score: 0.3264
+
+TOP FEATURES:
+  trip_distance_km: 0.6208
+  dropoff_latitude: 0.0600
+  pickup_hour: 0.0562
+  dropoff_longitude: 0.0524
+  pickup_latitude: 0.0486
+  pickup_longitude: 0.0387
+  temperature_c: 0.0265
+  humidity_pct: 0.0217
+  wind_speed_kmh: 0.0194
+  pickup_dayofweek: 0.0173

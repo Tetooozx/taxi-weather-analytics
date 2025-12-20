@@ -1,0 +1,49 @@
+# .gitignore for NYC Taxi ETL Pipeline
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env.local
+.env
+# Data files (too large for git)
+data/raw/*.csv
+data/processed/*.csv
+data/reports/*.pdf
+data/reports/charts/
+
+# Models (can be large)
+models/*.pkl
+
+# Docker volumes
+postgres-db-volume/
+
+# Logs
+logs/
+*.log
+
+# Airflow
+airflow.db
+airflow-webserver.pid
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Power BI
+*.pbix.tmp
